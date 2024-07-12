@@ -1,0 +1,97 @@
+<!--Task 1: Create a Basic Flexbox Layout Start by creating a simple webpage layout using Flexbox. Your layout should include a header, a navigation menu, a main content area, and a footer. Utilize flex-direction to make sure your navigation menu is reading horizontally and your main content is reading vertically. Requirements for this task:
+
+Navigation Menu should contain at least 3 things (i.e. Home, Profile, About) and be arranged horizontally on the top of the page
+Header section should contain a background image and header text
+Header Text should be bold, contrast color and Centered
+
+Main Content should contain at least 2 different children divs with content and be arranged vertically stacked on top of one another
+Footer should contain at least 3 sections (i.e. Contact Us, Events, Blog) and be arranged horizontally 
+Expected Outcome: A webpage with a basic Flexbox layout, displaying a header, navigation, main content, and footer in a columnar arrangement
+
+Task 2: Implement Responsive Design Modify your Flexbox layout to include responsive design elements. Use media queries to adjust the layout for smaller screens, converting the navigation and footer content areas into a column format when the viewport width is less than 600px.
+
+Task 3: Enhance the Layout with Flexbox Properties Further enhance your layout by using Flexbox properties such as justify-content, align-items, and flex-grow. Adjust these properties to ensure that the main content area takes up the remaining space between the header and footer, and centers the content within the navigation and main content areas.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li style="float:right"><a class="active" href="#contact">Contact</a></li>
+          </ul>
+
+        <img src="cupcakes.jpg" alt="Cupcake Treat" width="100" height="100"/> 
+        <h1><b> Welcome to the CSS Layout Design Page</b></h1>
+        <p>A cupcake (AmE), fairy cake (BrE), or bun (IrE) is a small cake designed to serve one person, which may be baked in a small thin paper or aluminum cup. <span style="font-weight:bold;">As with larger cakes, frosting and other cake decorations such as fruit and candy may be applied.</span></p>
+        <p>A standard cupcake uses the same basic ingredients as standard-sized cakes: butter, sugar, eggs, and flour. Nearly any recipe that is suitable for a layer cake can be used to bake cupcakes. The cake batter used for cupcakes may be flavored or have other ingredients stirred in, such as raisins, berries, nuts, or chocolate chips.</p> 
+    </header>
+
+    <nav>
+        <h3> Flexbox : Cupcake Decoration Essentials</h3>
+        <div class="flex-container">
+            <div>Cupcake Liners</div>
+            <div>Piping Bags</div>
+            <div>Pastry tips</div>
+            <div>Sprinkles</div>
+            <div>Food Coloring</div>
+            <div>Apple Corer</div>
+            <div>Cupcake Storage</div>
+        </div>
+
+    </nav>
+
+    <main>
+        <div>
+            <h3>Interesting Cupcakes Fun Facts That You Should Know:</h3>
+            <div class="first_fact">
+                <p>The people of England prefer to call cupcakes by another name— fairy cakes! They believe it is the right size for a group of fairies to feast on.</p>
+                <p>merican cupcakes have a slight difference from British cupcakes. British cupcakes are usually smaller in size when compared to those baked in America.
+                    Americans also use more icing to make cupcakes, Britons prefer it to be just light.
+                    An average adult living in the United States is believed to consume at least one cupcake per day.</p>
+            </div>
+            <div class="second_fact">
+                <p>Cupcake shops became really popular in New York when television shows started featuring them.
+                    In the year 2005, Sprinkles Cupcakes launched the first ever bakery that was made exclusively for cupcakes.
+                    More brides are beginning to request for cupcakes at their wedding instead of the traditional classic wedding cake.</p>
+            </div>
+            <div class="third_fact">
+                <p>For cupcakes, the ingredients are measured with cups. For pound cake, the ingredients are measured in a regular weighing scale that is read in pounds.
+                    Cupcakes got their name from one or both of two sources: (1) from the fact that they are actually baked in cups, (2) from the fact that cups were used to measure their ingredients during baking.</p>
+                <p>Cupcakes were once called number cakes. In the early years, when they were just beginning to make a statement in the baking world, people called them 1-2-3-4 cakes. Why? Because it was a helpful way to remember the recipe.
+                    1- for one cups of butter
+                    2- for two cups of sugar
+                    3- for cups of flour, and
+                    4- which stands for four eggs.</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+    <footer>
+        <div class="footer_one">
+            <h3>Contact Us</h3>
+            <p>Contact us for delicious cupcakes!!</p>
+        <div class="footer_two">    
+            <h3>Events</h3>
+            <p>Amazing cupcakes for events and parties available!!</p>
+        </div>
+        <div class="footer_three">    
+            <h3>Blog</h3>
+            <p>Cupcake Blog</p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
+
